@@ -13,10 +13,11 @@ Estrutura de pastas:
 # Projeto Orange / Regras de Associação para Foodmart
 
 ## Imagem do Projeto
-> Coloque uma imagem da captura de tela com o projeto do Orange.
+
+![Imagem Orange Associação Foodmart](images/Regras_Associacao_Foodmart.png)
 
 ## Arquivo do Projeto
-> Coloque um link para o arquivo em Orange.
+[Arquivo Orange Associação Foodmart](orange/foodmart/foodmart.ows)
 
 # Projeto Orange / Análise de Dados do Google PlayStore
 

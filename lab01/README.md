@@ -71,8 +71,8 @@ Obs: essa análise pode ser interessante para alguém que queira investir em um 
 
 ## Diagrama de Componentes
 
-> Imagem (`PNG`) do diagrama de componentes do pedido de um produto (veja exemplos abaixo).
+![Diagrama de Componentes](images/Lab_INF331_3.png)
 
 ## Diagrama de Interfaces
 
-> Imagem (`PNG`) do detalhamento de interfaces referentes aos componentes.
+![Diagrama de Interfaces](images/Lab_INF331_2.png)

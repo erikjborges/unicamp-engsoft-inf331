@@ -65,7 +65,7 @@ Obs: essa análise pode ser interessante para alguém que queira investir em um 
 
 # Projeto de Composição de Componentes para Recomendação
 
-> Imagem (`PNG`) do diagrama de componentes (veja exemplos abaixo).
+![Projeto de Composição de Componentes para Recomendação](images/Lab_INF331_1.png)
 
 # Projeto de Composição de Componentes para Pedido
 

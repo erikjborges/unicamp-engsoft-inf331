@@ -19,18 +19,47 @@ Estrutura de pastas:
 
 ## Tarefa 3
 
-Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inventor que simule uma interface de compra, com as seguintes funcionalidades:
-1. apresente uma interface com as seguintes áreas:
-  * uma lista opções com o nome de três produtos (a sua escolha);
-  * um quadro de detalhes do produto;
-  * um campo para o usuário digitar a quantidade que deseja comprar;
-  * um botão de efetivação da compra;
-  * um campo de mensagens no rodapé.
-2. ao clicar no produto da lista de opções, deve ser apresentado no quadro de detalhamento:
-  * a imagem do produto;
-  * seu nome;
-  * o valor unitário e a unidade (g, kg, l);
-3. quando o botão de efetivação da compra for clicado, deve ser mostrado no campo de mensagem (rodapé) os dados da compra sendo efetivada: nome do produto, quantidade e o valor total a ser pago.
+## Tarefa 3
+
+Tela de listagem de produtos:
+
+![Tela Home](images/Screen1.png)
+
+Diagrama de blocos da tela de listagem de produtos:
+
+![Tela Home Componentes](images/Screen1_comp.png)
+
+Tela do produto Smartphone:
+
+![Tela Smartphone](images/Smartphone.png)
+
+Diagrama de blocos da tela do produto Smartphone:
+
+![Tela Smartphone Componentes](images/Smartphone_comp.png)
+
+Tela do produto Tablet:
+
+![Tela Tablet](images/Tablet.png)
+
+Diagrama de blocos da tela do produto Tablet:
+
+![Tela Tablet Componentes](images/Tablet_comp.png)
+
+Tela do produto SmartTV:
+
+![Tela SmartTV](images/SmartTV.png)
+
+Diagrama de blocos da tela do produto SmartTV:
+
+![Tela SmartTV Componentes](images/SmartTV_comp.png)
+
+Tela depois do clique no botão de "Comprar":
+
+![Tela Compra](images/Compra.png)
+
+Projeto do MIT App Inventor:
+
+[Projeto App Inventor](app/unicamp_inf331_lab3_tar3.aia)
 
 ## Tarefa 4
 

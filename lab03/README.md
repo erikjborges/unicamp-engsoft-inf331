@@ -19,8 +19,6 @@ Estrutura de pastas:
 
 ## Tarefa 3
 
-## Tarefa 3
-
 Tela de listagem de produtos:
 
 ![Tela Home](images/Screen1.png)

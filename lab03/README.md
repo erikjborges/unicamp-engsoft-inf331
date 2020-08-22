@@ -34,8 +34,4 @@ Elabore um protótipo de uma interface gráfica com um usuário no MIT App Inven
 
 ## Tarefa 4
 
-Tarefa a ser feita com a equipe do trabalho:
-Usando o espaço que separa o MVC, detalhe os diagramas das Tarefas 1 e 2, da seguinte maneira:
-* considere que os diagramas que você fez fazem parte do Controller;
-* detalhe mais componentes referentes ao Model e ao View;
-* defina como será a interação entre esses componentes.
+https://github.com/inf331equipe08/marketplace

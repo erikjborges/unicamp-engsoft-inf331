@@ -15,11 +15,7 @@ Estrutura de pastas:
 
 ## Tarefa 2
 
-Usando a representação de componentes que se comunicam por mensagens na forma de uma orquestração, elabore um diagrama contendo os componentes (Blackbox) e as respectivas interfaces de eventos para realizar um **leilão virtual invertido de produtos**, conforme a seguinte sequência:
-1. o cliente seleciona um produto;
-2. um módulo de leilão informa a todos os potenciais fornecedores daquele produto sobre a demanda e inicia um leilão;
-3. os potenciais fornecedores fazem ofertas;
-4. Os três produtos com menor preço são apresentados para o cliente - em caso de empate de preço, considerar quem fez primeiro a oferta.
+![Imagem Tarefa 2](images/Lab_INF331_Lab3_Tab2.png)
 
 ## Tarefa 3
 

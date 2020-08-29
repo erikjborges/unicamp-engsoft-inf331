@@ -20,8 +20,8 @@ Estrutura de pastas:
 
 ## Tarefa 3
 > Coloque a imagem do PNG do seu diagrama como ilustrado abaixo:
->
-> ![Diagrama de Orquestração](images/componentizacao-tecnico-model.png)
+
+![Diagrama Tarefa 3](images/tarefa-3.png)
 
 ## Tarefa 4
 

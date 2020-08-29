@@ -25,76 +25,101 @@ Estrutura de pastas:
 
 ## Tarefa 4
 
-### Serviço `<n>`
-
-* **Título do serviço**: `<título>`
-* **Breve descrição**:
-  > Breve descrição do serviço
-* **URL completa da requisição**: `<URL>`
-* **Cabeçalho HTTP da chamada**:
-~~~http
-<cabeçalho>
-~~~
-* **Cabeçalho HTTP da resposta**:
-~~~http
-<cabeçalho>
-~~~
-* **Conteúdo da resposta**:
-~~~json
-<conteúdo>
-~~~
+### Serviço `1`
 
 ### Serviço Exemplo
 
-* **Título do serviço**: `XKCD`
+* **Título do serviço**: `Get Gnews`
 * **Breve descrição**:
-  Serviço que recebe o número de uma das tirinhas do XKCD e retorna os dados da tirinha e a URL para a sua imagem.
-* **URL completa da requisição**: `http://xkcd.com/35/info.0.json`
+  Serviço que retorna as últimas notícias sobre o COVID-19 disponíveis o Google News API referentes aos Estados Unidos.
+* **URL completa da requisição**: `https://covid19-us-api.herokuapp.com/news`
 * **Cabeçalho HTTP da chamada**:
 ~~~http
-GET /http://xkcd.com/35/info.0.json HTTP/2
-Host: any-api.com:8443
-User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0
-Accept: */*
-Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate, br
-Origin: https://any-api.com
-Connection: keep-alive
-Referer: https://any-api.com/xkcd_com/xkcd_com/console/_comicId_info_0_json/GET
+GET /news HTTP/1.1
+Host: https://covid19-us-api.herokuapp.com
 ~~~
 * **Cabeçalho HTTP da resposta**:
 ~~~http
-access-control-allow-origin: *
-age: 0
-cache-control: max-age=300
-content-encoding: br
-content-type: application/json
-date: Sat, 22 Aug 2020 20:22:49 GMT
-etag: W/"5f3f46c3-1e8"
-expires: Sat, 22 Aug 2020 20:27:49 GMT
-last-modified: Fri, 21 Aug 2020 04:00:03 GMT
-server: cloudflare
-vary: Accept-Encoding
-via: 1.1 varnish
-x-cache: MISS
-x-cache-hits: 0
-x-final-url: https://xkcd.com/35/info.0.json
-x-served-by: cache-pao17426-PAO
-x-timer: S1598127769.058105,VS0,VE255
+HTTP/1.1 200 OK
+Connection: keep-alive
+Date: Sat, 29 Aug 2020 02:10:38 GMT
+Server: uvicorn
+Content-Length: 5352
+Content-Type: application/json
+Via: 1.1 vegur
 ~~~
 * **Conteúdo da resposta**:
 ~~~json
 {
-  "month": "1",
-  "num": 35,
-  "link": "",
-  "year": "2006",
-  "news": "",
-  "safe_title": "Sheep",
-  "transcript": "Heading: Another from my high-school notebooks.\n[[A sheep and a potted saguaro cactus linked by an arcing yellow electricity bolt, drawn on graph paper]]\n{{title text: I think it's the sheep zapping the cactus and not vice-versa}}",
-  "alt": "I think it's the sheep zapping the cactus and not vice-versa",
-  "img": "https://imgs.xkcd.com/comics/sheep.jpg",
-  "title": "Sheep",
-  "day": "1"
+    "success": true,
+    "message": [
+        {
+            "title": "Apple Loop: New iPhone 12 Leaks, iPad Pro Update Confirmed, Goodbye MacBook Pro - Forbes",
+            "url": "https://www.forbes.com/sites/ewanspence/2020/08/28/apple-news-headlines-iphone-12-display-camera-macbook-pro-macos-ipad-apple-watch-fortnite-applebot/",
+            "published": "Fri 28, 2020, 06: 28 PM ET"
+        },
+        {
+            "title": "FULL REVEAL! Elon Musk's Neuralink chip tested live in pig brains - CNET",
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9TnFiUXVaT0Z2T1HSAQA?oc=5",
+            "published": "Fri 28, 2020, 06: 23 PM ET"
+        },
+        {
+            "title": "Donald Trump says he wants the Big Ten and other conferences to start playing football 'now' - Yahoo Sports",
+            "url": "https://sports.yahoo.com/donald-trump-says-he-wants-the-big-ten-and-other-conferences-to-start-playing-football-now-224251881.html",
+            "published": "Fri 28, 2020, 05: 42 PM ET"
+        }
+    ]
 }
 ~~~
+
+
+### Serviço `2`
+
+* **Título do serviço**: `Get Twitter`
+* **Breve descrição**:
+  Serviço que retorna os últimos tweets sobre COVID-19 nos Estados Unidos.
+* **URL completa da requisição**: `https://covid19-us-api.herokuapp.com/twitter`
+* **Cabeçalho HTTP da chamada**:
+~~~http
+GET /twitter HTTP/1.1
+Host: https://covid19-us-api.herokuapp.com
+~~~
+* **Cabeçalho HTTP da resposta**:
+~~~http
+HTTP/1.1 200 OK
+Connection: keep-alive
+Date: Sat, 29 Aug 2020 02:14:21 GMT
+Server: uvicorn
+Content-Length: 466554
+Content-Type: application/json
+Via: 1.1 vegur
+~~~
+* **Conteúdo da resposta**:
+~~~json
+{
+    "success": true,
+    "message": {
+        "username": "CDCgov",
+        "full_name": "CDCgov",
+        "tweets": [
+            {
+                "tweet_id": 1299485679722868739,
+                "full_text": "RT @CDC_HIVAIDS: CDC's new guidance for #PrEP programs affected by #COVID19 discusses home specimen collection kits for #HIV and #STD testi…",
+                "created_at": "2020-08-28T23:15:03"
+            },
+            {
+                "tweet_id": 1299481983945449472,
+                "full_text": "RT @CDC_NCEZID: Is your pet included in your family’s emergency plan? #PrepareNow by making a pet disaster kit:\n\n Food, water &amp; bowls\n Pe…",
+                "created_at": "2020-08-28T23:00:22"
+            },
+            {
+                "tweet_id": 1299476861861457925,
+                "full_text": "RT @HHSGov: Cars can quickly heat up to dangerous temperatures, even with a window cracked open. Find more tips from @CDCgov for staying sa…",
+                "created_at": "2020-08-28T22:40:01"
+            }
+        ]
+    }
+}
+~~~
+
+Obs: a quantidade de itens no retorno dos serviços foi reduzida para facilitar a leitura.

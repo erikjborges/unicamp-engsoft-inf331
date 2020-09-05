@@ -1,4 +1,4 @@
-# sApresentação do Lab05 - Subcomponentes e Páginas Dinâmicas
+# Apresentação do Lab05 - Subcomponentes e Páginas Dinâmicas
 
 Estrutura de pastas:
 
@@ -14,7 +14,7 @@ Estrutura de pastas:
 ![Diagrama de Subcomponentes](images/diagrama-subcomponentes.png)
 
 ## Tarefa 2
-Link para o projeto no Codepen: [React 03 - Componente Barra](https://codepen.io/santanche/pen/KKzmbwR)
+Link para o projeto no Codepen: [React 03 - Componente Barra](https://codepen.io/erikjborges/pen/WNwXBQE)
 
 > Coloque o código do seu componente:
 >
@@ -34,11 +34,27 @@ class Barra extends React.Component {
   }
 }
 
+class TextOne extends React.Component {
+  render() {
+
+    return <h2>O dinossauro</h2>;
+  }
+}
+
+class TextTwo extends React.Component {
+  render() {
+
+    return <h2>saiu da lama.</h2>;
+  }
+}
+
 const elemento = <div>
-                   <h2>O dinossauro</h2>
+                   <TextOne />
                    <Barra tamanho="10"/>
-                   <h2>pulou na lama.</h2>
+                   <TextTwo />
                  </div>
+
 ReactDOM.render(elemento,
         document.getElementById("root"));
+
 ~~~
